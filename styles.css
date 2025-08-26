@@ -1,42 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
 }
-h1,h2,h3,h4,h5, h6 {
-   color: #222;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
 }
-h1{
-    font-size: 50px;
-    line-height: 64px;
+h1 {
+  font-size: 50px;
+  line-height: 64px;
 }
-h2{
-    font-size: 46px;
-    line-height: 54px;
+h2 {
+  font-size: 46px;
+  line-height: 54px;
 }
-h4{
-    font-size: 20px;
+h4 {
+  font-size: 20px;
 }
-h6{
-    font-size: 12px;
-    font-weight: 700;
+h6 {
+  font-size: 12px;
+  font-weight: 700;
 }
-p{
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
 }
 
 .section-p1 {
-    padding: 40px 80px;
+  padding: 40px 80px;
 }
 .section-m1 {
-    margin: 40px 0;
-}   
+  margin: 40px 0;
+}
 
-body{
-    width: 100%;
+body {
+  width: 100%;
+}
+
+/* header styles */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  position: sticky;
+  top: 0;
+  background: #e3e6f3;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+  font-size: 60px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  gap: 30px;
+  text-wrap: nowrap;
+  list-style-type: none;
+}
+#navbar li {
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#hero {
+  background-image: url(./assets/e-commerce-hero-dam-image-en-31561--data.jpg);
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#hero h4 {
+  padding: 15px 0;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background: #088178;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 700;
+}
+
+#hero button:hover {
+  background: #065a52;
+}
+
+/* end of hero styles */
+
+/* start of featured section */
+
+#feature {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 100px 80px;
+  gap: 30px;
+}
+
+.feature-box {
+  border: 1px solid #d7d7d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.feature-box img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.feature-box button{
+  background: #088178;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 15px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 700;
 }
