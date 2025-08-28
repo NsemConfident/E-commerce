@@ -159,6 +159,8 @@ body {
   text-align: center;
   padding: 100px 80px;
   gap: 30px;
+  margin: auto;
+
 }
 
 .feature-box {
@@ -169,10 +171,10 @@ body {
   align-items: center;
   padding: 30px;
   border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 .feature-box:hover {
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.06);
 }
 
 .feature-box img {
@@ -226,6 +228,7 @@ body {
   gap: 30px;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 .product-item {
@@ -282,8 +285,49 @@ background-color: rgb(131, 11, 11);
   font-size: 20px;
 }
 
-
-
 .product-item h4 {
   color: #088178;
+}
+
+/* CTA section  */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+background-image: url('/assets/ian-schneider-PAykYb-8Er8-unsplash.jpg');
+height: 300px;
+width: 100%;
+object-fit: cover;
+padding: 40px 80px;
+margin: 40px auto;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta h6, h2 {
+  color: white;
+}
+
+.cta span{
+  color: rgb(255, 29, 29);
+}
+.cta button {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #088178;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.cta button:hover{
+  color: white;
+  background-color: #088178;
 }
